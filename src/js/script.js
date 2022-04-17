@@ -1,0 +1,1 @@
+const numb = 42;
