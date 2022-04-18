@@ -7,6 +7,7 @@
 	<title>Pulsemeter</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
                 </div>
             </header>
             <div class="promo__wrapper">
-                <h1 class="promo__header">Selection of a heart rate monitor</h1>
+                <h1 class="promo__header">Selection of a puslometer </h1>
                 <h2 class="promo__subheader">according to your level of training</h2>
                 <div class="promo__icons">
                     <div class="promo__icon"><img src="icons/timer.png" alt="timer">Submission time: 10 minutes</div>
@@ -80,15 +81,45 @@
         </div>
     </section>
     <section class="carousel">
-        <div class="carousel__inner">
-            <div><img src="img/sliders/slider1.png" alt="slider1"></div>
-            <div><img src="img/sliders/slider2.png" alt="slider2"></div>
-            <div><img src="img/sliders/slider3.png" alt="slider3"></div>
-        </div>             
+        <div class="container">
+            <div class="carousel__inner">
+                <div><img src="img/sliders/slider1.png" alt="slider1"></div>
+                <div><img src="img/sliders/slider2.png" alt="slider2"></div>
+                <div><img src="img/sliders/slider3.png" alt="slider3"></div>
+            </div>    
+        </div>         
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Catalog puslometers</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><div>for fitness</div></li>
+                <li class="catalog__tab"><div>for run</div></li>
+                <li class="catalog__tab"><div>for triathlon</div></li>
+            </ul>
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="img/photo.png" alt="puslometer" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">puslometer Polar FT1</div>
+                    <div class="catalog-item__descr">For first steps in training, based on hearth rythms</div>
+                    <a href="#" class="catalog-item__link">More</a>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">1200 czk</div>
+                            <div class="catalog-item__price">1100 czk</div>
+                        </div>
+                        <button class="catalog-item__btn">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content"></div>
+            <div class="catalog__content"></div>
+        </div>
     </section>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
