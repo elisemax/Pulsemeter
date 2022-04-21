@@ -29,4 +29,44 @@ $(document).ready(function(){
     };
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+    //Modal trigger
+    $('[data-modal=consultation]').on('click',function(){
+        $('.overlay, #consultation').fadeIn('fast');
+    });
+    $('.modal__close').on('click', function(){
+        $('.overlay, #consultation, #order, #thanks').fadeOut('fast');
+    });
+    $('.button_mini').each(function(i){
+        $(this).on('click', function(){
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('fast');
+        });
+    });
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "We need your email address to contact you",
+                    minlength: jQuery.validator.format("At least {0} characters required!")
+                },
+                phone: "Please write your phone",
+                email: {
+                  required: "We need your email address to contact you",
+                  email: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        });
+    }
+    validateForms('#consultation form');
+    validateForms('#order form');
+    validateForms('#consultation-form');
 });
