@@ -16,11 +16,11 @@
         }
     }
     .consultation{
-        .title{
-            .title_left{
+        
+        .title_left{
                 font-size: 28px;
-            }
         }
+        
         &__descr{
             font-size: 16px;
         }
@@ -29,9 +29,11 @@
         .carousel__inner{
             .slick-next{
                 right: 0;
+                z-index: 2;
             }
             .slick-prev{
                 left: 0;
+                z-index: 2;
             }
         }
         .slick-slide{
@@ -71,6 +73,7 @@
     .promo
         {
             &__wrapper{
+                margin-right: 0;
                 align-items:center;
             }
             &__header{
@@ -81,7 +84,6 @@
             }
         }
     .advantages{
-        
         &__header{
             font-size: 24px;
         }
@@ -104,6 +106,7 @@
         }
     }
     .consultation{
+
         min-height: 550px;
         padding: 50px 0 50px 0;
         .title_left{
@@ -134,7 +137,8 @@
         }
         .slick-slide{
             img{
-                width: 80%;
+                width: 70%;
+                margin-left: 115px;
             }
         }
     }
@@ -149,9 +153,6 @@
     }
     .promo
         {
-            &__wrapper{
-                margin-right: 25px;
-            }
             &__header{
                 font-size: 24px;
             }
@@ -176,10 +177,6 @@
     .advantages{
         &__header{
             font-size: 24px;
-            
         }
     }
-}
-@media (max-width: 575px) {
-    
 }
