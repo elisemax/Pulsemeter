@@ -46,7 +46,10 @@ $(document).ready(function(){
     function validateForms(form){
         $(form).validate({
             rules: {
-                name: "required",
+                name: {
+                    required: true,
+                    minlength: 2
+                },
                 phone: "required",
                 email: {
                     required: true,
@@ -55,7 +58,7 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "We need your email address to contact you",
+                    required: "We need your name to contact you",
                     minlength: jQuery.validator.format("At least {0} characters required!")
                 },
                 phone: "Please write your phone",
