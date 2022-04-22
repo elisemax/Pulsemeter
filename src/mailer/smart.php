@@ -19,7 +19,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('', 'Pulsemeter');   
-$mail->addAddress('cihiyo2692@topyte.com');     // Add a recipient
+$mail->addAddress('');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
