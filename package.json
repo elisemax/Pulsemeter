@@ -18,10 +18,13 @@
     "gulp-sass": "^5.1.0",
     "sass": "^1.49.11"
   },
-  "browserslist":[
+  "browserslist": [
     "last 1 version",
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }
