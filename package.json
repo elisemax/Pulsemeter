@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -23,8 +24,5 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ],
-  "dependencies": {
-    "animate.css": "^4.1.1"
-  }
+  ]
 }
