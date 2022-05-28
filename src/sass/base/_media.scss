@@ -148,7 +148,6 @@
     .header{
         &__phone{
             margin-right: 35px;
-            
         }
     }
     .promo
@@ -161,7 +160,6 @@
             }
             &__icons{
                 margin-top: 50px;
-    
             }
             &__icon{
                 font-size: 12px;
@@ -173,10 +171,14 @@
                 margin-right: 25px;
             }
         }
-    
     .advantages{
         &__header{
             font-size: 24px;
+        }
+    }
+    .catalog{
+        &__content{
+            justify-content: space-around;
         }
     }
 }
