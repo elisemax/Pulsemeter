@@ -231,6 +231,49 @@
             li.slick-active button {
                 background-color: red;
             }
+    }
+    .catalog{
+        padding-bottom: 40px;
+        .title{
+            font-size: 25px;
+        }
+        &__tabs{
+            margin-top: 30px;
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 0;
+            padding-left: 0;
+            flex-direction: column;
+            align-items: center;
+            align-content: stretch;
+            justify-content: space-around;
+        }
+        &__tab{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        &__content{
+            margin-top: 20px;
+        }
+    }
+    .reviews{
         
+        .title{
+            font-size: 25px;
+        }
+        &__customer{
+            margin-top: 50px;
+        }
+        &__text{
+            margin-left: 20px;
+            padding-right: 10px;
+        }
+        &__descr{
+            font-size: 14px;
+            line-height: 22px;
+        }
+        img{
+            width: 60%;
+        }
     }
 }
