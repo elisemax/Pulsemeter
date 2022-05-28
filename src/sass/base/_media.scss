@@ -110,7 +110,7 @@
         min-height: 550px;
         padding: 50px 0 50px 0;
         .title_left{
-            font-size: 30px;
+            font-size: 28px;
             text-align: center;
         }
         &__descr{
@@ -124,6 +124,11 @@
             align-items: center;
             justify-content: center;
             margin-top: 40px;
+        }
+    }
+    .catalog{
+        &__content{
+            justify-content: space-around;
         }
     }
     .carousel{
@@ -176,9 +181,56 @@
             font-size: 24px;
         }
     }
-    .catalog{
-        &__content{
-            justify-content: space-around;
+    .reviews{
+        .title{
+            font-size: 28px;
         }
+    }
+    .carousel{
+        .carousel__inner{
+            width: 500px;
+            .slick-next{
+                right: 0;
+            }
+            .slick-prev{
+                left: 0;
+            }
+        }
+        .slick-slide{
+            img{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 1rem 0;
+        
+        list-style-type: none;
+        
+            li {
+                margin: 0 0.25rem;
+            }
+        
+            button {
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                padding: 0;
+                
+                border: none;
+                border-radius: 100%;
+                background-color: black;
+                
+                text-indent: -9999px;
+            }
+        
+            li.slick-active button {
+                background-color: red;
+            }
+        
     }
 }
